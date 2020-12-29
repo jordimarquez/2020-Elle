@@ -14,7 +14,14 @@
       
   </head>
  <body>
-
+        <div class="cursor">
+          <div class="cursor__ball cursor__ball--big ">
+            <svg height="35" width="35">
+              <circle cx="20px" cy="20px" r="15" stroke-width="0"></circle>
+            </svg>
+          </div>
+        </div>
+     
       <div class="navegacio">
                 <nav class="navbar navbar-expand-lg menu justify-content-between">
                         <a class="navbar-brand" href="html.html">
@@ -26,16 +33,16 @@
 
                         <div class="collapse navbar-collapse" id="menu">
                            <ul class="navbar-nav">
-                                <li class="nav-item">
+                                <li class="hoverable nav-item">
                                 <a class="nav-link" href="projecte.html"> Projecte </a>  
                                 </li>
-                                <li class="nav-item">
-                                <a class="nav-link" href="equip.html"> Equip</a>  
+                                <li class=" hoverable nav-item">
+                                <a class="hoverable nav-link" href="equip.html"> Equip</a>  
                                 </li>
-                                <li class="nav-item">
+                                <li class="hoverable nav-item">
                                 <a class="nav-link" href="makingoff.html"> Makingoff </a>  
                                 </li>
-                                <li class="nav-item">
+                                <li class="hoverable nav-item">
                                 <a class="nav-link" href="contacte.html"> Contacte </a>  
                                 </li>
                             </ul>
@@ -43,30 +50,34 @@
                         </div>
                 </nav>
          </div>
-     
+        <div class="text" >
+            <h1>HOLA</h1>  
+        </div>
      <!-- rayOrigin:mouse per a que s'activi el cursor i detecti quan has fet click-->
      
-    <a-scene cursor="rayOrigin: mouse" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="" raycaster="direction: -0.5153421418792836 0.29342950527412326 -0.8051842039172501; origin: 0 1.6 2; useWorldCoordinates: true" geometry="">
+<a-scene cursor="rayOrigin: mouse" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" device-orientation-permission-ui="" raycaster="direction: -0.521212439545173 0.2267542778227444 -0.8227515362200516; origin: 0 1.6 2; useWorldCoordinates: true" geometry="" >
         <a-assets>
             <img id="Texture" src="img/polaroid.jpg">
         </a-assets>
 
-        <a-sphere   class="esfera"  id="esfera" position="0 1.25 -5" radius="1.25" color="#EF2D5E" material="" geometry="">
+       <a-sphere class="esfera" id="esfera" position="0 1.25 -1.59738" radius="1.25" color="#EF2D5E" material="" geometry="">
             
         </a-sphere>
+            
          
          <!-- raycaster=objects -> defineix que el objecte esfera es pot clicar hauria de solucionar el problema:For performance, please define raycaster.objects when using raycaster or cursor components to whitelist which entities to intersect with. e.g., raycaster="objects: [data-raycastable]-->
          
-         <a-entity raycaster="objects: .esfera; direction: 0.3536418824482261 0.2766109773604957 -0.8935456262453231; origin: 0 1.6 2; useWorldCoordinates: true" cursor="rayOrigin: mouse"></a-entity>
+         <a-entity raycaster="objects: .esfera; direction: -0.2168072933667207 0.3203930001974863 -0.9221404030663933; origin: 0 1.6 2; useWorldCoordinates: true" cursor="rayOrigin: mouse"></a-entity>
         
-        <a-box src="#Texture" class="polaroid" position="-1.94653 1.30388 -3.75082" radius="1.25" color="none" material="" geometry="depth: 0.01; height: 2.5; width: 1.5" rotation="0 45 0">
-        <a-animation attribute="position" to="0 3 -5" direction="alternate" dur="2000"
-      repeat="indefinite"></a-animation>
+        <a-box src="#Texture" class="polaroid" position="-0.13181 1.30388 -3.75082" radius="1.25" color="none" material="" geometry="depth: 0.01; height: 15; width: 10" rotation="0 180 0" scale="1 1.01 1" visible="false">
+            <a-animation attribute="position" to="0 3 -5" direction="alternate" dur="2000" repeat="indefinite"></a-animation>
         </a-box>
+        
           <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" material="" geometry=""></a-plane>
           <a-sky color="#ECECEC" material="color: #fff5f5" geometry=""></a-sky>
           <!--a-entity camera="" keyboard-controls="enabled:true" look-controls="enabled: true; magicWindowTrackingEnabled: true; touchEnabled: true; mouseEnabled: true" wasd-controls-enabled="true"  position="0 1.49383 0" rotation=""  mouse-cursor=""> <a-cursor material="" raycaster="" cursor="" geometry=""></a-cursor></a-entity-->
         
+     <div class="a-loader-title" style="display: none;">Elle</div>
      <div class="a-loader-title" style="display: none;">Elle</div></a-scene>
       <script>
           AFRAME.registerComponent('log', {

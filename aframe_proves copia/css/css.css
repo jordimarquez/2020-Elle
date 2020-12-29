@@ -1,3 +1,26 @@
+body{
+    
+}
+.circle{
+  width: 80px;
+  height: 80px;
+  border: 1px solid #3c2946;
+  position: fixed;
+  border-radius:50%;
+}
+body .cursor {
+  pointer-events: none;
+   
+}
+body .cursor__ball {
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 1000;
+}
+body .cursor__ball circle {
+  fill: #ee5535;
+}
+
 .navegacio{
     padding:0px 50px;
 }
@@ -41,7 +64,7 @@ nav{
     
 }
 .navbar-brand img{
-    width:7%;
+    width:10%;
 }
 #menu li{
     margin:0 30px;
@@ -64,39 +87,58 @@ nav{
     border:2px solid #ee5535; 
    
 }
-
+.text{
+   
+}
 
 /*******EL PROJECTE******/
 
 .projecte .curt{
       margin-top:30px;
 }
+.projecte .curt .titol{
+    text-align: center;
+    padding: 50px 0;
+}
+.projecte .curt .titol img{
+    margin-top: -35px;
+    
+}
 .projecte .row{
     padding:30px;
+    justify-content: center;
     align-items: center;
     
 }
-.projecte .fotos{
-    display:flex;
-    justify-content: center;
-    align-items: center;
+.projecte .curt p{
+    padding: 0 100px;
 }
 .projecte .fotos img{
-    width:40%;
+    width:100%;
     margin:30px;
     box-shadow: 1px 1px 8px -5px #000;
 }
 .projecte h2{
-    color:#ee5535;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 40px;
+    font-size:100px;
     font-weight: bold;
+    -webkit-text-fill-color: rgba(0,0,0,0); /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #ee5535;
+    
 }
 .projecte p{
     color:gray;
     font-size: 16px;
       
 }
+.projecte .instalacio{
+    background-color: #ee5535;
+}
+.projecte .instalacio p{
+    color:white!important;
+}
+
 
 /*******L'EQUIP******/
 

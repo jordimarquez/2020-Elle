@@ -133,10 +133,20 @@ nav{
       
 }
 .projecte .instalacio{
+    width:100%;
+    height:600px;
     background-color: #ee5535;
+    position:absolute;
+    top:250px;
+    left:0;
+    z-index: -100;
+    
 }
-.projecte .instalacio p{
-    color:white!important;
+.blanc{
+    position:relative;
+}
+ .blanc p{
+    color:#fff!important;
 }
 
 
@@ -234,3 +244,94 @@ header label:hover {
     height: 50%;
     margin:30px;
 }
+
+/******MAKING OFF******/
+
+.making .titol{
+    height:100%;
+}
+.making .titol h2{
+    cursor:pointer;
+    color:black;
+    font-weight: 100;
+    font-size: 36px;
+    background-color: #f2f2f2;
+    padding:50px;
+    text-align: center;
+    height:100%;
+}
+
+
+.making .item{
+    height: 100%;
+    transition: all 0.2s;
+}
+
+.making .item:hover .titol h2{
+    background-color: #EE5535;
+    color:#FFF;
+    transition: all 0.1s;
+}
+
+.making .col-lg-6{
+    padding-left:0px;
+    padding-right:0px;
+}
+.making .base{
+    width:100%;
+    height: 100%;
+    align-items: center;
+}
+.making .loadvideo{
+    position: absolute;
+    top:0;
+    left:0px;
+    width:100%;
+    height: 100%;
+    display: none;
+    background-color: #ee5535;
+}
+.making .loadfoto{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    display: none;
+     background-color: #ee5535;
+}
+
+.loadvideo p{
+    font-size: 14px;
+    font-family:"montserrat";
+    font-weight: 100;
+    padding:20px;
+     line-height: 1.8;
+}
+.loadvideo .arrow{
+    padding-top:40px;
+    cursor:pointer;
+    transition: all 0.1s;
+}
+.loadvideo .arrow i:hover{
+    transform: scale(1.1);
+    color:#fff;
+}
+
+.loadfoto p{
+    font-size: 14px;
+    font-family:"montserrat";
+    font-weight: 100;
+    padding:20px;
+     line-height: 1.8;
+}
+
+.loadfoto .arrow{
+    padding-top:40px;
+    cursor:pointer;
+}
+.loadfoto .arrow i:hover{
+    transform: scale(1.1);
+    color:#fff;
+}
+

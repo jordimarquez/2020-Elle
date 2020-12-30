@@ -16,6 +16,14 @@ $(window).bind('scroll',function(){
     }
         
     });
+$(document).ready(function(){
+	$('#nav-icon3').click(function(){
+		$(this).toggleClass('open');
+        $('.navbar-nav').toggleClass('obrir');
+        console.log('he clicat');
+	});
+});
+
 
 function curtMaking() {
     document.getElementById('curtMaking').style.visibility="hidden";
@@ -93,8 +101,8 @@ function enrere2() {
 //dblclick() clicar dos vegades pq funcioni
     //efectes fadeIn(), fadeOut(),slideDown(), slideDUp(), toggle(),fadeToggle() i slideToggle(). el numero es el temps que tarda a ferho
 //addeventlistener per mostrar la polaroid quan es fa click
-document.querySelector('.esfera').addEventListener('click', function (evt) {
+/*document.querySelector('.esfera').addEventListener('click', function (evt) {
   console.log('This element was clicked!');
     document.querySelector('.polaroid').setAttribute('visible', 'true');
-});
+});*/
 

@@ -402,7 +402,6 @@ body {
 
 
 .making .item{
-    height: 100%;
     transition: all 0.2s;
 }
 
@@ -520,10 +519,12 @@ body {
   -webkit-text-stroke-color: #ee5535;
     
 }
-.making .loadfoto h4, h5{
+.making .loadfoto h4{
 	color:white!important;
 }
-
+.making .loadfoto h5{
+	color:white!important;
+}
 .making .loadfoto .animate{
 	position: relative;
 }
